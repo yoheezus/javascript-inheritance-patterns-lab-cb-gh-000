@@ -32,8 +32,13 @@ Circle.prototype.constructor = Circle
 Circle.prototype.area = function() {
     return (3.14 * (this.radius * this.radius))
 }
+
 Circle.prototype.circumference = function() {
     return ((3.14 * this.radius) * 2)
+}
+
+Circle.prototype.diameter = function() {
+    return this.radius * 2
 }
 
 function Polygon(sides) {
