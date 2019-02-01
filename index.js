@@ -79,6 +79,14 @@ function Rectangle(width, height) {
     this.width = width
     this.height = height
 }
+//inherit from Quadrilateral
+Rectangle.prototype = Object.create(Quadrilateral.prototype)
+Rectangle.prototype.constructor = Rectangle
+
+//extend Rectangle
+Rectangle.prototype.area = function() {
+    return height * width
+}
 
 
 
