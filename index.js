@@ -56,6 +56,15 @@ Polygon.prototype.perimeter = function() {
     return total
 }
 
+function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
+    Polygon.call(this, [
+        new Side(sideOneLength),
+        new Side(sideTwoLength),
+        new Side(sideThreeLength),
+        new Side(sideFourLength)
+    ])
+}
+
 // function Quadrilateral(x, y, sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
 // 	// Inheriting so must call parent object and pass this context
 // 	Shape.call(this, 4, x, y);
