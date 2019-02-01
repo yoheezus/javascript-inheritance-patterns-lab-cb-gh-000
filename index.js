@@ -36,6 +36,10 @@ Circle.prototype.circumference = function() {
     return ((3.14 * this.radius) * 2)
 }
 
+function Polygon() {
+
+}
+
 // function Quadrilateral(x, y, sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
 // 	// Inheriting so must call parent object and pass this context
 // 	Shape.call(this, 4, x, y);
