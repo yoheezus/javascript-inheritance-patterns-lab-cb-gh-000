@@ -40,6 +40,9 @@ function Polygon(sides) {
     Shape.call(this)
     this.sides = sides
 }
+// Inherit from shape
+Polygon.prototype = Object.create(Shape.prototype)
+Polygon.prototype.constructor = Shape
 
 // function Quadrilateral(x, y, sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
 // 	// Inheriting so must call parent object and pass this context
