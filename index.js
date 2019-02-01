@@ -3,7 +3,7 @@ function Point(x, y) {
     this.y = y;
 }
 // Extend functions by adding to Prototype
-Point.prototype.toString =  function() {return `(${x}, ${y})`}
+Point.prototype.toString =  function() {return `(${this.x}, ${this.y})`}
 
 function Side(length) {
     this.length = length
