@@ -13,10 +13,10 @@ function Shape() {}
 
 Shape.prototype.addToPlane = (x, y) => {
         this.position = new Point(x, y)
-    }
-    Shape.prototype.move = function(x, y) {
+}
+Shape.prototype.move = function(x, y) {
         this.addToPlane(x, y)
-    }
+}
 
 
 function Circle(radius) {
