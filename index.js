@@ -85,7 +85,7 @@ Rectangle.prototype.constructor = Rectangle
 
 //extend Rectangle
 Rectangle.prototype.area = function() {
-    return height * width
+    return this.height * this.width
 }
 
 
