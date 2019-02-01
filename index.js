@@ -6,7 +6,7 @@ function Point(x, y) {
 Point.prototype.toString =  function() {return `(${x}, ${y})`}
 
 function Shape() {
-    this.addToPlane = (x, y) => {
+    Shape.prototype.addToPlane = (x, y) => {
         this.position = new Point(x, y)
     }
     this.move = function(x, y) {
