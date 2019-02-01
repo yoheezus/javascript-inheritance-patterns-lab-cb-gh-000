@@ -109,10 +109,10 @@ Square.prototype.constructor = Square
 
 // extend Square
 Square.prototype.listProperties = function() {
-    for (var prop in sq) {
-	if (sq.hasOwnProperty(prop)) {
-		console.log("sq." + prop + " = " + sq[prop]);
-	}
+    for (var prop in this) {
+    	if (this.hasOwnProperty(prop)) {
+    		console.log("sq." + prop + " = " + this[prop]);
+    	}
 }
 }
 
