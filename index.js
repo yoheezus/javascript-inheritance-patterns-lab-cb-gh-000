@@ -3,3 +3,7 @@ function Point(x, y) {
     this.y = y;
     this.toString = () => `(${x}, ${y})`
 }
+
+function Shape() {
+
+}
