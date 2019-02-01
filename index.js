@@ -2,7 +2,7 @@ function Point(x, y) {
     this.x = x
     this.y = y;
 }
-
+// Extend functions by adding to Prototype
 Point.prototype.toString =  function() {return `(${x}, ${y})`}
 
 function Side(length) {
@@ -10,10 +10,11 @@ function Side(length) {
 }
 
 function Shape() {}
-
+// Extend functions by adding to Prototype
 Shape.prototype.addToPlane = function(x, y) {
         this.position = new Point(x, y)
 }
+// Extend functions by adding to Prototype
 Shape.prototype.move = function(x, y) {
         this.addToPlane(x, y)
 }
