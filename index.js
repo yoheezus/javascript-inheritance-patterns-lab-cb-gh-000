@@ -32,6 +32,9 @@ Circle.prototype.constructor = Circle
 Circle.prototype.area = function() {
     return (3.14 * (this.radius * this.radius))
 }
+Circle.prototype.circumference = function() {
+    return ((3.14 * this.radius) * 2)
+}
 
 // function Quadrilateral(x, y, sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
 // 	// Inheriting so must call parent object and pass this context
