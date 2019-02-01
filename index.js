@@ -44,6 +44,16 @@ function Polygon(sides) {
 Polygon.prototype = Object.create(Shape.prototype)
 Polygon.prototype.constructor = Shape
 
+//extend Polygon
+Polygon.prototype.numberOfSides = this.sides.length
+Polygon.prototype.perimeter = function() {
+    var total = 0
+    for (let i = 0; i < this.sides.length; i++) {
+        total += this.sides[i].length
+    }
+    return total
+}
+
 // function Quadrilateral(x, y, sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
 // 	// Inheriting so must call parent object and pass this context
 // 	Shape.call(this, 4, x, y);
