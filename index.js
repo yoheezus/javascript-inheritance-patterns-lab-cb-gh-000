@@ -113,7 +113,7 @@ Square.prototype.listProperties = function() {
     	if (this.hasOwnProperty(prop)) {
     		console.log("sq." + prop + " = " + this[prop]);
     	}
-}
+    }
 }
 
 
