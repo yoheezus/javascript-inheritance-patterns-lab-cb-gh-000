@@ -45,7 +45,9 @@ Polygon.prototype = Object.create(Shape.prototype)
 Polygon.prototype.constructor = Shape
 
 //extend Polygon
-Polygon.prototype.numberOfSides = this.sides.length
+Polygon.prototype.numberOfSides = function() {
+    return this.sides.length
+}
 Polygon.prototype.perimeter = function() {
     var total = 0
     for (let i = 0; i < this.sides.length; i++) {
