@@ -88,6 +88,14 @@ Rectangle.prototype.area = function() {
     return this.height * this.width
 }
 
+function Triangle(sideOneLength, sideTwoLength, sideThreeLength) {
+    Polygon.call(this, [
+        new Side(sideOneLength),
+        new Side(sideTwoLength),
+        new Side(sideThreeLength)
+    ])
+}
+
 
 
 
