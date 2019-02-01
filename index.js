@@ -23,6 +23,8 @@ function Circle(radius) {
     Shape.call(this)
     this.radius = radius
 }
+Circle.prototype = Object.create(Shape.prototype)
+Circle.prototype.constructor = Circle
 
 // function Quadrilateral(x, y, sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
 // 	// Inheriting so must call parent object and pass this context
