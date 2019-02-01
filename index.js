@@ -5,14 +5,19 @@ function Point(x, y) {
 
 Point.prototype.toString =  function() {return `(${x}, ${y})`}
 
-function Shape() {
-    Shape.prototype.addToPlane = (x, y) => {
+function Side(length) {
+    this.length = length
+}
+
+function Shape() {}
+
+Shape.prototype.addToPlane = (x, y) => {
         this.position = new Point(x, y)
     }
-    this.move = function(x, y) {
+    Shape.prototype.move = function(x, y) {
         this.addToPlane(x, y)
     }
-}
+
 
 function Circle(radius) {
     Shape.call(this)
