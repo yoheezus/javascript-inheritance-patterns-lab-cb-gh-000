@@ -95,6 +95,9 @@ function Triangle(sideOneLength, sideTwoLength, sideThreeLength) {
         new Side(sideThreeLength)
     ])
 }
+//inherit from Polygon
+Triangle.prototype = Object.create(Polygon.prototype)
+Triangle.prototype.constructor = Triangle
 
 
 
