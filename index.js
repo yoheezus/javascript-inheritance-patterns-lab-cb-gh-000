@@ -104,7 +104,7 @@ function Square(length) {
     this.length = length
 }
 // Inherit from Rectangle
-Square.prototype = Object.create(Rectangle.shape)
+Square.prototype = Object.create(Rectangle.prototype)
 Square.prototype.constructor = Square
 
 // extend Square
