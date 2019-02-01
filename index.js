@@ -72,6 +72,17 @@ function Quadrilateral(sideOneLength, sideTwoLength, sideThreeLength, sideFourLe
 // inherit from Polygon
 Quadrilateral.prototype = Object.create(Polygon.prototype)
 Quadrilateral.prototype.constructor = Quadrilateral
+
+
+function Rectangle(width, height) {
+    Quadrilateral.call(this, width, height, width, height)
+    this.width = width
+    this.height = height
+}
+
+
+
+
 // function Quadrilateral(x, y, sideOneLength, sideTwoLength, sideThreeLength, sideFourLength) {
 // 	// Inheriting so must call parent object and pass this context
 // 	Shape.call(this, 4, x, y);
