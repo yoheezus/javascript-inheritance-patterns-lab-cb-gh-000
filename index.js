@@ -30,7 +30,7 @@ Circle.prototype.constructor = Circle
 
 // extend Circle
 Circle.prototype.area = function() {
-    return (3.14 * (this.radius * this.radius))
+    return (3.14 * (this.radius ** 2))
 }
 
 Circle.prototype.circumference = function() {
