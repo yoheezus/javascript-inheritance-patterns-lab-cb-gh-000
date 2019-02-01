@@ -99,6 +99,11 @@ function Triangle(sideOneLength, sideTwoLength, sideThreeLength) {
 Triangle.prototype = Object.create(Polygon.prototype)
 Triangle.prototype.constructor = Triangle
 
+function Square(length) {
+    Rectangle.call(this, length, length)
+    this.length = length
+}
+
 
 
 
